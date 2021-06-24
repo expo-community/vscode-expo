@@ -1,0 +1,13 @@
+diff --git a/node_modules/@expo/config-plugins/build/utils/plugin-resolver.js b/node_modules/@expo/config-plugins/build/utils/plugin-resolver.js
+index 8bca781..3bbddb3 100644
+--- a/node_modules/@expo/config-plugins/build/utils/plugin-resolver.js
++++ b/node_modules/@expo/config-plugins/build/utils/plugin-resolver.js
+@@ -255,7 +255,7 @@ function resolveConfigPluginExport({
+ 
+ function requirePluginFile(filePath) {
+   try {
+-    return require(filePath);
++    return require(/* webpackIgnore: true */ filePath);
+   } catch (error) {
+     // TODO: Improve error messages
+     throw error;

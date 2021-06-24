@@ -1,5 +1,5 @@
-import * as xdl from '@expo/xdl/build/project/ExpSchema';
 import jsonSchemaTraverse from 'json-schema-traverse';
+import * as xdl from 'xdl/build/project/ExpSchema';
 
 type JsonSchema = {
   [key: string]: any;

@@ -1,5 +1,5 @@
-import * as xdl from '@expo/xdl/build/project/ExpSchema';
 import traverse, { Callback } from 'json-schema-traverse';
+import * as xdl from 'xdl/build/project/ExpSchema';
 
 import * as tools from '../../../test/tools';
 import * as schema from '../schema';
